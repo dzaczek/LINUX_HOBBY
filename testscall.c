@@ -4,7 +4,7 @@
 
 int main ()
 {
- /* Conversion constants. */
+ /* conversion */
  long minute = 60;
  long hour = 60 * 60;
  long day = 60*60* 24;
@@ -36,7 +36,7 @@ int main ()
   new_table[0]=((float)pointer_to_sysinfo.loads[0])/div_by_num;
   new_table[1]=((float)pointer_to_sysinfo.loads[1])/div_by_num;
   new_table[2]=((float)pointer_to_sysinfo.loads[2])/div_by_num;
- printf ("Load Average 1, 5, and 15 minute\n\t1: %f \t5: %f\t15: %f\n", new_table[0],new_table[0],new_table[0]);
+ printf ("Load Average 1, 5, and 15 minute\n\t1: %f \t5: %f\t15: %f\n", new_table[0],new_table[1],new_table[2]);
 
  return 0;
 }
